@@ -13,7 +13,7 @@
     
     [Singleton sharedInstance].userName = @"GG";
     
-    [Singleton new].userName = @"KK";
+    [Singleton sharedInstance].userName = @"KK";
     
     NSLog(@"###%@=[Singleton defaultManager].userName###",[Singleton sharedInstance].userName);
 }

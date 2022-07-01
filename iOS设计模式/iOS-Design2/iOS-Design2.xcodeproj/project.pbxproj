@@ -20,6 +20,8 @@
 		655470D4286B87DB00D9135F /* FactroyMethodClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 655470D3286B87DB00D9135F /* FactroyMethodClient.m */; };
 		655470D9286CB94800D9135F /* FactoryMethodClient2.m in Sources */ = {isa = PBXBuildFile; fileRef = 655470D8286CB94800D9135F /* FactoryMethodClient2.m */; };
 		655470DD286CCE6100D9135F /* AbstractFactoryClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 655470DC286CCE6100D9135F /* AbstractFactoryClient.m */; };
+		655470E1286E3BAD00D9135F /* PrototypeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 655470E0286E3BAD00D9135F /* PrototypeClient.m */; };
+		655470E5286E839100D9135F /* BuilderClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 655470E4286E839100D9135F /* BuilderClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		655470D8286CB94800D9135F /* FactoryMethodClient2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryMethodClient2.m; sourceTree = "<group>"; };
 		655470DB286CCE6100D9135F /* AbstractFactoryClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFactoryClient.h; sourceTree = "<group>"; };
 		655470DC286CCE6100D9135F /* AbstractFactoryClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractFactoryClient.m; sourceTree = "<group>"; };
+		655470DF286E3BAD00D9135F /* PrototypeClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypeClient.h; sourceTree = "<group>"; };
+		655470E0286E3BAD00D9135F /* PrototypeClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeClient.m; sourceTree = "<group>"; };
+		655470E3286E839100D9135F /* BuilderClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderClient.h; sourceTree = "<group>"; };
+		655470E4286E839100D9135F /* BuilderClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		655470AC286B7CEC00D9135F /* iOS-Design2 */ = {
 			isa = PBXGroup;
 			children = (
+				655470E2286E3F7500D9135F /* BuilderPattern */,
+				655470DE286E3B7800D9135F /* PrototypePattern */,
 				655470CD286B7EEA00D9135F /* FactoryPattern */,
 				655470C6286B7D0200D9135F /* SingletonPattern */,
 				655470AD286B7CEC00D9135F /* AppDelegate.h */,
@@ -144,6 +152,24 @@
 				655470DC286CCE6100D9135F /* AbstractFactoryClient.m */,
 			);
 			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		655470DE286E3B7800D9135F /* PrototypePattern */ = {
+			isa = PBXGroup;
+			children = (
+				655470DF286E3BAD00D9135F /* PrototypeClient.h */,
+				655470E0286E3BAD00D9135F /* PrototypeClient.m */,
+			);
+			path = PrototypePattern;
+			sourceTree = "<group>";
+		};
+		655470E2286E3F7500D9135F /* BuilderPattern */ = {
+			isa = PBXGroup;
+			children = (
+				655470E3286E839100D9135F /* BuilderClient.h */,
+				655470E4286E839100D9135F /* BuilderClient.m */,
+			);
+			path = BuilderPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,11 +246,13 @@
 				655470D9286CB94800D9135F /* FactoryMethodClient2.m in Sources */,
 				655470B5286B7CEC00D9135F /* ViewController.m in Sources */,
 				655470AF286B7CEC00D9135F /* AppDelegate.m in Sources */,
+				655470E5286E839100D9135F /* BuilderClient.m in Sources */,
 				655470CC286B7E1900D9135F /* SingleClient.m in Sources */,
 				655470DD286CCE6100D9135F /* AbstractFactoryClient.m in Sources */,
 				655470C0286B7CEE00D9135F /* main.m in Sources */,
 				655470D1286B7F6C00D9135F /* SimpleFactoryClient.m in Sources */,
 				655470B2286B7CEC00D9135F /* SceneDelegate.m in Sources */,
+				655470E1286E3BAD00D9135F /* PrototypeClient.m in Sources */,
 				655470C9286B7D4500D9135F /* Singleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

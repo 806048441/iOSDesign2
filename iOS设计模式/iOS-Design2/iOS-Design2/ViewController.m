@@ -10,6 +10,7 @@
 #import "SimpleFactoryClient.h"
 #import "FactroyMethodClient.h"
 #import "FactoryMethodClient2.h"
+#import "PrototypeClient.h"
 @interface ViewController ()
 
 @end
@@ -37,7 +38,9 @@
 //    [FactroyMethodClient test];
 //    [FactroyMethodClient test];
     
-    [[PersonFactoryMethodClient2 new] test];
+//    [[PersonFactoryMethodClient2 new] test];
+    
+    [PrototypeClient test];
 
 }
 

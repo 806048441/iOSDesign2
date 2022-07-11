@@ -11,6 +11,9 @@
 #import "FactroyMethodClient.h"
 #import "FactoryMethodClient2.h"
 #import "PrototypeClient.h"
+#import "BuilderClient.h"
+#import "BuilderClient2.h"
+#import "BuilderClient3.h"
 @interface ViewController ()
 
 @end
@@ -20,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    self.view.backgroundColor = [UIColor whiteColor];
 //    [SimpleFactoryClient test1];
 //    [SimpleFactoryClient test1];
 //    [SimpleFactoryClient test1];
@@ -40,7 +43,9 @@
     
 //    [[PersonFactoryMethodClient2 new] test];
     
-    [PrototypeClient test];
+//    [PrototypeClient test];
+    
+    [BuilderClient3 test];
 
 }
 

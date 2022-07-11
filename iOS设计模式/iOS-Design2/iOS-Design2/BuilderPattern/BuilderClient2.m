@@ -1,40 +1,42 @@
 //
-//  BuilderClient.m
+//  BuilderClient2.m
 //  iOS-Design2
 //
-//  Created by 神州第一坑 on 2022/7/1.
+//  Created by 神州第一坑 on 2022/7/12.
 //
 
-#import "BuilderClient.h"
+#import "BuilderClient2.h"
 #import <UIKit/UIKit.h>
 
-@interface BuilderAlertView : UIView
+@interface BuilderAlertView2 : UIView
 
 @end
 
-@implementation BuilderAlertView
+@implementation BuilderAlertView2
 
 @end
 
 
-@protocol AbstractAlertViewBuilderProtocol <NSObject>
+@protocol AbstractAlertViewBuilderProtocol2 <NSObject>
 - (void)buildTitle;
 - (void)buildContent;
 - (void)buildActions;
 @end
 
-@interface AbstractAlertViewBuilder : NSObject <AbstractAlertViewBuilderProtocol>
 
-@property (strong, nonatomic) BuilderAlertView *builderAlert;
+/// 指挥者类 和 抽象建造者类 变成一个 很多业务会这样用
+@interface AbstractAlertViewBuilder2 : NSObject <AbstractAlertViewBuilderProtocol2>
+
+@property (strong, nonatomic) BuilderAlertView2 *builderAlert;
 @end
 
-@implementation AbstractAlertViewBuilder
+@implementation AbstractAlertViewBuilder2
 
-- (BuilderAlertView *)builderAlert {
+- (BuilderAlertView2 *)builderAlert {
     
     if (!_builderAlert) {
         
-        _builderAlert  =[[BuilderAlertView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        _builderAlert  =[[BuilderAlertView2 alloc]initWithFrame:[UIScreen mainScreen].bounds];
         _builderAlert.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
     }
     return _builderAlert;
@@ -55,13 +57,21 @@
     NSLog(@"###子类实现%s###",__func__);
 }
 
+- (BuilderAlertView2 *)construct {
+    
+    [self buildTitle];
+    [self buildContent];
+    [self buildActions];
+    return self.builderAlert;
+}
+
 @end
 
-@interface SimpleAlertViewBuilder : AbstractAlertViewBuilder
+@interface SimpleAlertViewBuilder2 : AbstractAlertViewBuilder2
 
 @end
 
-@implementation SimpleAlertViewBuilder
+@implementation SimpleAlertViewBuilder2
     
 - (void)buildTitle {
     
@@ -89,11 +99,11 @@
 
 @end
 
-@interface ComplexAlertViewBuilder : AbstractAlertViewBuilder
+@interface ComplexAlertViewBuilder2 : AbstractAlertViewBuilder2
 
 @end
 
-@implementation ComplexAlertViewBuilder
+@implementation ComplexAlertViewBuilder2
     
 - (void)buildTitle {
     
@@ -121,44 +131,18 @@
 
 @end
 
-@interface AlertViewDirector : NSObject //指挥者
-
-@property (strong, nonatomic) AbstractAlertViewBuilder *builder;
-@end
-
-@implementation AlertViewDirector
-
-- (void)setBuilder:(AbstractAlertViewBuilder *)builder {
-    
-    _builder = builder;
-}
-
-- (BuilderAlertView *)construct {
-    
-    if (!self.builder) {
-        
-        return nil;
-    }
-    [self.builder buildTitle];
-    [self.builder buildContent];
-    [self.builder buildActions];
-    return self.builder.builderAlert;
-}
+@interface BuilderClient2 ()
 
 @end
 
-@interface BuilderClient ()
-
-@end
-
-@implementation BuilderClient
+@implementation BuilderClient2
 
 + (void)test {
     
-    AlertViewDirector *director = [[AlertViewDirector alloc]init];
-    [director setBuilder:[ComplexAlertViewBuilder new]];
-    BuilderAlertView *builderAlert =  director.construct;
+    ComplexAlertViewBuilder2 *builder = [ComplexAlertViewBuilder2 new];
+    BuilderAlertView2 *builderAlert =  builder.construct;
     [[UIApplication sharedApplication].delegate.window.rootViewController.view addSubview:builderAlert];
     
 }
 @end
+

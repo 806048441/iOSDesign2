@@ -14,6 +14,7 @@
 #import "BuilderClient.h"
 #import "BuilderClient2.h"
 #import "BuilderClient3.h"
+#import "BuilderClient4.h"
 @interface ViewController ()
 
 @end
@@ -45,7 +46,7 @@
     
 //    [PrototypeClient test];
     
-    [BuilderClient3 test];
+    [BuilderClient4 test];
 
 }
 

@@ -11,7 +11,7 @@
 
 #define RandomColor RGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 
-//接口不能实现.调用 .调用需要返回值的
+//接口不能实现.调用 .调用需要返回值的。 所以排除这种写法，虽然这种耦合低
 @protocol AbstractAlertViewProtocol <NSObject>
 
 @optional
@@ -85,6 +85,9 @@
     return self;
 }
 
+
+/// 添加view的坐标也可以不进行转换 这里是为了更符合实际场景
+/// @param label <#label description#>
 - (AbstractAlertViewBuilder3 *)addLabel:(UILabel *)label {
     
     label.frame = CGRectMake(0, _bottom, label.bounds.size.width, label.bounds.size.height);

@@ -1,5 +1,5 @@
 //
-//  BuilderClient4.h
+//  BuilderClient5.h
 //  iOS-Design2
 //
 //  Created by 神州第一坑 on 2022/7/12.
@@ -9,9 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BuilderClient4 : NSObject
+@interface BuilderClient5 : NSObject
 
-+ (void)test;
 @end
 
 NS_ASSUME_NONNULL_END

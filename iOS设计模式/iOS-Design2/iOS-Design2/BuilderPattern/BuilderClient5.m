@@ -6,6 +6,7 @@
 //
 
 #import "BuilderClient5.h"
+#import <UIKit/UIKit.h>
 @class BuilderClient4Config;
 typedef BuilderClient4Config *(^configString)(NSString *string);
 typedef BuilderClient4Config *(^configTextField)(UITextField *textField);
@@ -19,7 +20,11 @@ typedef BuilderClient4Config *(^configFloat)(CGFloat value);
 
 @implementation BuilderClient4Config
 
-- (configTextField)te;
+- (configTextField)te {
+    
+    return nil;
+}
+
 @end
 
 

@@ -11,6 +11,8 @@
 
 + (void)test {
     
+    //单例的实际场景 实在太多
+    
     [Singleton sharedInstance].userName = @"GG";
     
     [Singleton sharedInstance].userName = @"KK";

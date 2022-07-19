@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6507CDEE2885D96100FACA91 /* ProxyClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6507CDED2885D96100FACA91 /* ProxyClient.m */; };
 		655470AF286B7CEC00D9135F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 655470AE286B7CEC00D9135F /* AppDelegate.m */; };
 		655470B5286B7CEC00D9135F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655470B4286B7CEC00D9135F /* ViewController.m */; };
 		655470B8286B7CEC00D9135F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655470B6286B7CEC00D9135F /* Main.storyboard */; };
@@ -28,9 +29,17 @@
 		65921824287CA8540062CDEF /* BuilderClient3.m in Sources */ = {isa = PBXBuildFile; fileRef = 65921823287CA8540062CDEF /* BuilderClient3.m */; };
 		65921827287CB0A70062CDEF /* BuilderClient4.m in Sources */ = {isa = PBXBuildFile; fileRef = 65921826287CB0A70062CDEF /* BuilderClient4.m */; };
 		6592182A287CB4180062CDEF /* BuilderClient5.m in Sources */ = {isa = PBXBuildFile; fileRef = 65921829287CB4180062CDEF /* BuilderClient5.m */; };
+		65D5B8492886FF3500C3BB47 /* NSTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5B8482886FF3500C3BB47 /* NSTimerProxy.m */; };
+		65D5B84D288726CA00C3BB47 /* NSTimerInsCls.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5B84C288726CA00C3BB47 /* NSTimerInsCls.m */; };
+		65D5B8502887275D00C3BB47 /* ProxyClient2.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5B84F2887275D00C3BB47 /* ProxyClient2.m */; };
+		65D5B85328872B7E00C3BB47 /* ProxyClient3.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5B85228872B7E00C3BB47 /* ProxyClient3.m */; };
+		65D5B85628872DFE00C3BB47 /* NSTimerProxy2.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5B85528872DFE00C3BB47 /* NSTimerProxy2.m */; };
+		65D5B85A2887348000C3BB47 /* AdapterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D5B8592887348000C3BB47 /* AdapterClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6507CDEC2885D96100FACA91 /* ProxyClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyClient.h; sourceTree = "<group>"; };
+		6507CDED2885D96100FACA91 /* ProxyClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyClient.m; sourceTree = "<group>"; };
 		655470AA286B7CEC00D9135F /* iOS-Design2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Design2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		655470AD286B7CEC00D9135F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		655470AE286B7CEC00D9135F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +77,19 @@
 		65921826287CB0A70062CDEF /* BuilderClient4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderClient4.m; sourceTree = "<group>"; };
 		65921828287CB4180062CDEF /* BuilderClient5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderClient5.h; sourceTree = "<group>"; };
 		65921829287CB4180062CDEF /* BuilderClient5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderClient5.m; sourceTree = "<group>"; };
+		65D5B8472886FF3500C3BB47 /* NSTimerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerProxy.h; sourceTree = "<group>"; };
+		65D5B8482886FF3500C3BB47 /* NSTimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerProxy.m; sourceTree = "<group>"; };
+		65D5B84A2887264F00C3BB47 /* NSTimerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerProtocol.h; sourceTree = "<group>"; };
+		65D5B84B288726CA00C3BB47 /* NSTimerInsCls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerInsCls.h; sourceTree = "<group>"; };
+		65D5B84C288726CA00C3BB47 /* NSTimerInsCls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerInsCls.m; sourceTree = "<group>"; };
+		65D5B84E2887275D00C3BB47 /* ProxyClient2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyClient2.h; sourceTree = "<group>"; };
+		65D5B84F2887275D00C3BB47 /* ProxyClient2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyClient2.m; sourceTree = "<group>"; };
+		65D5B85128872B7E00C3BB47 /* ProxyClient3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyClient3.h; sourceTree = "<group>"; };
+		65D5B85228872B7E00C3BB47 /* ProxyClient3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyClient3.m; sourceTree = "<group>"; };
+		65D5B85428872DFE00C3BB47 /* NSTimerProxy2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerProxy2.h; sourceTree = "<group>"; };
+		65D5B85528872DFE00C3BB47 /* NSTimerProxy2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerProxy2.m; sourceTree = "<group>"; };
+		65D5B8582887348000C3BB47 /* AdapterClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterClient.h; sourceTree = "<group>"; };
+		65D5B8592887348000C3BB47 /* AdapterClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +103,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6507CDEB2885D93B00FACA91 /* ProxyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				6507CDEC2885D96100FACA91 /* ProxyClient.h */,
+				6507CDED2885D96100FACA91 /* ProxyClient.m */,
+				65D5B84E2887275D00C3BB47 /* ProxyClient2.h */,
+				65D5B84F2887275D00C3BB47 /* ProxyClient2.m */,
+				65D5B85128872B7E00C3BB47 /* ProxyClient3.h */,
+				65D5B85228872B7E00C3BB47 /* ProxyClient3.m */,
+				65D5B8472886FF3500C3BB47 /* NSTimerProxy.h */,
+				65D5B8482886FF3500C3BB47 /* NSTimerProxy.m */,
+				65D5B85428872DFE00C3BB47 /* NSTimerProxy2.h */,
+				65D5B85528872DFE00C3BB47 /* NSTimerProxy2.m */,
+				65D5B84A2887264F00C3BB47 /* NSTimerProtocol.h */,
+				65D5B84B288726CA00C3BB47 /* NSTimerInsCls.h */,
+				65D5B84C288726CA00C3BB47 /* NSTimerInsCls.m */,
+			);
+			path = ProxyPattern;
+			sourceTree = "<group>";
+		};
 		655470A1286B7CEC00D9135F = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +142,8 @@
 		655470AC286B7CEC00D9135F /* iOS-Design2 */ = {
 			isa = PBXGroup;
 			children = (
+				65D5B8572887345D00C3BB47 /* AdapterPattern */,
+				6507CDEB2885D93B00FACA91 /* ProxyPattern */,
 				655470E2286E3F7500D9135F /* BuilderPattern */,
 				655470DE286E3B7800D9135F /* PrototypePattern */,
 				655470CD286B7EEA00D9135F /* FactoryPattern */,
@@ -196,6 +240,15 @@
 			path = BuilderPattern;
 			sourceTree = "<group>";
 		};
+		65D5B8572887345D00C3BB47 /* AdapterPattern */ = {
+			isa = PBXGroup;
+			children = (
+				65D5B8582887348000C3BB47 /* AdapterClient.h */,
+				65D5B8592887348000C3BB47 /* AdapterClient.m */,
+			);
+			path = AdapterPattern;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,15 +326,22 @@
 				655470D9286CB94800D9135F /* FactoryMethodClient2.m in Sources */,
 				655470B5286B7CEC00D9135F /* ViewController.m in Sources */,
 				655470AF286B7CEC00D9135F /* AppDelegate.m in Sources */,
+				65D5B8502887275D00C3BB47 /* ProxyClient2.m in Sources */,
 				655470E5286E839100D9135F /* BuilderClient.m in Sources */,
+				65D5B85628872DFE00C3BB47 /* NSTimerProxy2.m in Sources */,
 				65921827287CB0A70062CDEF /* BuilderClient4.m in Sources */,
+				65D5B85A2887348000C3BB47 /* AdapterClient.m in Sources */,
 				655470CC286B7E1900D9135F /* SingleClient.m in Sources */,
 				655470DD286CCE6100D9135F /* AbstractFactoryClient.m in Sources */,
 				65921821287CA5550062CDEF /* BuilderClient2.m in Sources */,
+				6507CDEE2885D96100FACA91 /* ProxyClient.m in Sources */,
+				65D5B84D288726CA00C3BB47 /* NSTimerInsCls.m in Sources */,
 				655470C0286B7CEE00D9135F /* main.m in Sources */,
+				65D5B85328872B7E00C3BB47 /* ProxyClient3.m in Sources */,
 				6592182A287CB4180062CDEF /* BuilderClient5.m in Sources */,
 				655470D1286B7F6C00D9135F /* SimpleFactoryClient.m in Sources */,
 				655470E1286E3BAD00D9135F /* PrototypeClient.m in Sources */,
+				65D5B8492886FF3500C3BB47 /* NSTimerProxy.m in Sources */,
 				655470C9286B7D4500D9135F /* Singleton.m in Sources */,
 				65921824287CA8540062CDEF /* BuilderClient3.m in Sources */,
 			);

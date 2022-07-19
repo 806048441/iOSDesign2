@@ -15,6 +15,9 @@
 #import "BuilderClient2.h"
 #import "BuilderClient3.h"
 #import "BuilderClient4.h"
+#import "ProxyClient.h"
+#import "ProxyClient2.h"
+#import "ProxyClient3.h"
 @interface ViewController ()
 
 @end
@@ -46,8 +49,13 @@
     
 //    [PrototypeClient test];
     
-    [BuilderClient4 test];
+//    [BuilderClient4 test];
 
+//    [[ProxyClient new] test];
+//    [[ProxyClient2 new] test];
+//    [[ProxyClient3 new] test];
+    [[ProxyClient3 new] test2];
+    [[ProxyClient3 new] test3];
 }
 
 

@@ -11,11 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Singleton : NSObject
 
-+ (instancetype)sharedInstance;
 @property (copy, nonatomic) NSString *userName;
 
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
++ (instancetype)sharedInstance;
 @end
 
 NS_ASSUME_NONNULL_END

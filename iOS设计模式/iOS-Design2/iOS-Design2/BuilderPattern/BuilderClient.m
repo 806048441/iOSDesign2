@@ -8,6 +8,7 @@
 #import "BuilderClient.h"
 #import <UIKit/UIKit.h>
 
+//例子是一个构造警告框的例子
 @interface BuilderAlertView : UIView
 
 @end
